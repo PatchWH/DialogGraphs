@@ -2,4 +2,4 @@
 Simple Dialog Graphs using XNode
 
 ## This has dependencies!
-### ttps://github.com/Siccity/xNode
+### https://github.com/Siccity/xNode
