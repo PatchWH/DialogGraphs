@@ -81,8 +81,6 @@ namespace PWH.DialogSystem
                 {
                     next = current.GetNext();
 
-                    Debug.Log(next);
-
                     if (next is SubGraphNode subGraphNode)
                     {
                         currentSubGraphNode = subGraphNode;

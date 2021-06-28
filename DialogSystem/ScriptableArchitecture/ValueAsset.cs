@@ -7,7 +7,11 @@ namespace PWH.ScriptableArcitecture
 {
     public abstract class ValueAsset<T> : ScriptableObject
     {
-        public T Value;
+        [SerializeField] T _Value;
+        public T Value { get { return _Value; } set { _Value = value; OnValueChanged?.Invoke(); } }
+
+        public delegate void ValueChangedDelegate();
+        public event ValueChangedDelegate OnValueChanged;
     }
 
     // If you own Odin Inspector, you can remove all comments to get a much better inspector GUI

@@ -38,8 +38,6 @@ namespace PWH.DialogSystem
                 else if (tone == dislikedTone)
                     opinion--;
             }
-
-            Debug.Log(name + " Opinion: " + opinion);
         }
     }
 

@@ -13,7 +13,7 @@ namespace PWH.DialogSystem
         public Purpose purpose;
         public Tone tone;
 
-        [TextArea]
+        [Input(ShowBackingValue.Unconnected),TextArea]
         public string text;
 
         public float delay;
@@ -41,6 +41,47 @@ namespace PWH.DialogSystem
             }
 
             return null;
+        }
+
+        PWH.ScriptableArcitecture.ValueAsset<string> connectedValueAsset = null;
+
+        protected override void Init()
+        {
+            if (connectedValueAsset)
+            {
+                connectedValueAsset.OnValueChanged += OnConnectedValueAssetChanged;
+                text = connectedValueAsset.Value;
+            }
+        }
+
+        public override void OnCreateConnection(NodePort from, NodePort to)
+        {
+            if (to.fieldName == "text")
+            {
+                object outputValue = from.GetOutputValue();
+
+                Debug.Log(outputValue);
+
+                if(outputValue != null && outputValue is PWH.ScriptableArcitecture.StringVariable stringVariable)
+                {
+                    connectedValueAsset = stringVariable;
+                    text = connectedValueAsset.Value;
+                }
+            }
+        }
+
+        void OnConnectedValueAssetChanged()
+        {
+            text = connectedValueAsset.Value;
+        }
+
+        public override void OnRemoveConnection(NodePort port)
+        {
+            if(port.fieldName == "text" && connectedValueAsset != null)
+            {
+                connectedValueAsset.OnValueChanged -= OnConnectedValueAssetChanged;
+                connectedValueAsset = null;
+            }
         }
     }
 }

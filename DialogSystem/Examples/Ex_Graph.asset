@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Message
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 504, y: -152}
+  position: {x: 152, y: 232}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: -8955183795662601859}
@@ -43,6 +44,15 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: -8955183795662601859}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   speaker: {fileID: 11400000, guid: 15f94fbd680b70f43817b13a898c6b87, type: 2}
   to: {fileID: 11400000, guid: f0e02e83faaaeb249ac437c6dedb3ff0, type: 2}
   purpose: 0
@@ -62,11 +72,12 @@ MonoBehaviour:
   m_Name: Message
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 984, y: -312}
+  position: {x: 392, y: 88}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: -8340197790200101504}
@@ -92,6 +103,15 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: -8340197790200101504}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   speaker: {fileID: 11400000, guid: f0e02e83faaaeb249ac437c6dedb3ff0, type: 2}
   to: {fileID: 11400000, guid: 15f94fbd680b70f43817b13a898c6b87, type: 2}
   purpose: 0
@@ -111,11 +131,12 @@ MonoBehaviour:
   m_Name: Message
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 40, y: -88}
+  position: {x: -8, y: -56}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: -8263983185094497438}
@@ -144,11 +165,20 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: -8263983185094497438}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   speaker: {fileID: 11400000, guid: f0e02e83faaaeb249ac437c6dedb3ff0, type: 2}
   to: {fileID: 11400000, guid: 15f94fbd680b70f43817b13a898c6b87, type: 2}
   purpose: 3
   tone: 10
-  text: What brings you to these parts?
+  text: What brings you to these lands?
   delay: 3
 --- !u!114 &-7316382758208141247
 MonoBehaviour:
@@ -163,11 +193,12 @@ MonoBehaviour:
   m_Name: Message
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1400, y: -40}
+  position: {x: 648, y: 264}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: -7316382758208141247}
@@ -193,6 +224,15 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: -7316382758208141247}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   speaker: {fileID: 11400000, guid: f0e02e83faaaeb249ac437c6dedb3ff0, type: 2}
   to: {fileID: 11400000, guid: 15f94fbd680b70f43817b13a898c6b87, type: 2}
   purpose: 2
@@ -212,11 +252,12 @@ MonoBehaviour:
   m_Name: Message
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 856, y: 88}
+  position: {x: -72, y: 360}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: -5959408580419686170}
@@ -242,6 +283,15 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: -5959408580419686170}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   speaker: {fileID: 11400000, guid: f0e02e83faaaeb249ac437c6dedb3ff0, type: 2}
   to: {fileID: 11400000, guid: 15f94fbd680b70f43817b13a898c6b87, type: 2}
   purpose: 3
@@ -261,7 +311,7 @@ MonoBehaviour:
   m_Name: Sub Graph
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1368, y: -216}
+  position: {x: 664, y: 88}
   ports:
     keys:
     - entry
@@ -311,7 +361,7 @@ MonoBehaviour:
   m_Name: Change Opinion
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1128, y: 120}
+  position: {x: 392, y: 232}
   ports:
     keys:
     - entry
@@ -356,7 +406,7 @@ MonoBehaviour:
   m_Name: Raise Game Event
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1880, y: -136}
+  position: {x: 1080, y: -72}
   ports:
     keys:
     - entry
@@ -397,7 +447,7 @@ MonoBehaviour:
   m_Name: Opinion Check
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 728, y: -152}
+  position: {x: 152, y: 344}
   ports:
     keys:
     - else
@@ -472,6 +522,7 @@ MonoBehaviour:
   - {fileID: -4818500858005369907}
   - {fileID: -1768958131600862360}
   - {fileID: 6126106617128559118}
+  - {fileID: 4987419899799811532}
   startNode: {fileID: 8762107314659683935}
 --- !u!114 &1737662137604224409
 MonoBehaviour:
@@ -486,11 +537,12 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 264, y: 56}
+  position: {x: -72, y: 120}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: 1737662137604224409}
@@ -516,6 +568,15 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: 1737662137604224409}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   index: 1
   text: Secrets!
 --- !u!114 &2874550357868947409
@@ -531,11 +592,12 @@ MonoBehaviour:
   m_Name: Message
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -168, y: -56}
+  position: {x: -216, y: -56}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: 2874550357868947409}
@@ -561,6 +623,15 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: 2874550357868947409}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   speaker: {fileID: 11400000, guid: f0e02e83faaaeb249ac437c6dedb3ff0, type: 2}
   to: {fileID: 11400000, guid: 15f94fbd680b70f43817b13a898c6b87, type: 2}
   purpose: 3
@@ -580,11 +651,12 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 264, y: -120}
+  position: {x: 152, y: 120}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: 4943109507594165016}
@@ -610,8 +682,49 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: 4943109507594165016}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   index: 0
   text: Adventure!
+--- !u!114 &4987419899799811532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3da4f4dddcd4624d989ce77ab28d812, type: 3}
+  m_Name: String Variable
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 600, y: -72}
+  ports:
+    keys:
+    - valueAsset
+    values:
+    - _fieldName: valueAsset
+      _node: {fileID: 4987419899799811532}
+      _typeQualifiedName: PWH.ScriptableArcitecture.ValueAsset`1[[System.String,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: text
+        node: {fileID: 7960932865610289819}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  valueAsset: {fileID: 11400000, guid: a131644f6ba53cf4c80dca6b91044ea1, type: 2}
 --- !u!114 &5863926318211020293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,11 +738,12 @@ MonoBehaviour:
   m_Name: Message
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 504, y: 72}
+  position: {x: -72, y: 248}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: 5863926318211020293}
@@ -655,6 +769,15 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: 5863926318211020293}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   speaker: {fileID: 11400000, guid: 15f94fbd680b70f43817b13a898c6b87, type: 2}
   to: {fileID: 11400000, guid: f0e02e83faaaeb249ac437c6dedb3ff0, type: 2}
   purpose: 3
@@ -674,7 +797,7 @@ MonoBehaviour:
   m_Name: Change Int Variable
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 952, y: -40}
+  position: {x: 392, y: 360}
   ports:
     keys:
     - entry
@@ -719,11 +842,12 @@ MonoBehaviour:
   m_Name: Message
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1624, y: -152}
+  position: {x: 840, y: -152}
   ports:
     keys:
     - entry
     - exit
+    - text
     values:
     - _fieldName: entry
       _node: {fileID: 7960932865610289819}
@@ -749,11 +873,23 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: text
+      _node: {fileID: 7960932865610289819}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: valueAsset
+        node: {fileID: 4987419899799811532}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
   speaker: {fileID: 11400000, guid: f0e02e83faaaeb249ac437c6dedb3ff0, type: 2}
   to: {fileID: 11400000, guid: 15f94fbd680b70f43817b13a898c6b87, type: 2}
   purpose: 0
   tone: 0
-  text: We've exited the sub-graph!
+  text: FINAL MESSAGE
   delay: 1
 --- !u!114 &8762107314659683935
 MonoBehaviour:
